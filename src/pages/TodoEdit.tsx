@@ -22,7 +22,7 @@ const TodoEdit = ({ states, callBacks }: propsType) => {
   const { uid } = useParams();
   const navigate = useNavigate();
   // uid 를 이용해서 find 합니다.
-  let todoItem = states.todoList.find((item) => item.uid === uid);
+  let todoItem = states.todoList.find(item => item.uid === uid);
   //   console.log("todoItem : ", todoItem);
   // 검색해 둔 아이템을 상태관리한다.
   const [todo, setTodo] = useState({ ...todoItem });
@@ -42,7 +42,7 @@ const TodoEdit = ({ states, callBacks }: propsType) => {
       uid: String(uid),
       title: values.title,
       body: values.body,
-      date: values.date,
+      date: moment(values.date).format("YYYY-MM-DD"),
       done: values.done,
       sticker: values.sticker,
     };
