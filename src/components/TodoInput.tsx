@@ -20,7 +20,7 @@ type propsType = {
     body: string,
     done: boolean,
     sticker: string,
-    date: string,
+    date: string
   ) => void;
 };
 
@@ -63,7 +63,7 @@ const TodoInput = (props: propsType) => {
       values.body,
       false,
       values.sticker,
-      day,
+      day
     );
     // 항목 초기화
     form.resetFields();

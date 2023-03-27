@@ -120,7 +120,7 @@ const Join = ({ callBacksFireBase, userLogin }: PropsType) => {
                   return Promise.resolve();
                 }
                 return Promise.reject(
-                  new Error("The two passwords that you entered do not match!"),
+                  new Error("The two passwords that you entered do not match!")
                 );
               },
             }),
@@ -164,6 +164,7 @@ const Join = ({ callBacksFireBase, userLogin }: PropsType) => {
           </Space>
         </Form.Item>
       </Form>
+
       <Modal
         title="Basic Modal"
         open={isModalOpen}

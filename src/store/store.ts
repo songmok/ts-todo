@@ -1,6 +1,6 @@
 import { configureStore } from "@reduxjs/toolkit";
 // slice 불러들임
-import couterReducer from "./counterSlice";
+import couterReducer from "./couterSlice";
 import userReducer from "./userSlice";
 import todoReducer from "./todoSlice";
 // persist 적용
@@ -28,7 +28,7 @@ export const store = configureStore({
   // },
   reducer: presistedReducer,
   // 임시로 middleware 체크 기능 제거
-  middleware: getDefaultMiddleware => {
+  middleware: (getDefaultMiddleware) => {
     return getDefaultMiddleware({
       serializableCheck: false,
     });
