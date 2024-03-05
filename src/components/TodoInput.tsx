@@ -102,6 +102,7 @@ const TodoInput = (props: propsType) => {
               prefix={<UserOutlined />}
               maxLength={20}
               showCount
+              
             />
           </Form.Item>
           {/* 날짜 */}

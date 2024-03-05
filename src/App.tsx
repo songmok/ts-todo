@@ -42,7 +42,7 @@ function App({ states, callBacks, callBacksFireBase, userLogin }: propsType) {
       <css.Wrapper className="wrap">
         <css.Inner className="inner">
           <css.AppTitle>
-            <FormOutlined />
+            {/* <FormOutlined /> */}
             TodoList App
             {userLogin && (
               <>
